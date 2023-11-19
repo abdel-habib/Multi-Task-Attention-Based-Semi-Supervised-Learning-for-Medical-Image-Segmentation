@@ -1,4 +1,4 @@
-#### This is an unofficial repository for "Multi-Task Attention-Based Semi-Supervised Learning for Medical Image Segmentation" implementation. It contains some modifications that were fixed to fit our own task.
+This is an unofficial repository for "Multi-Task Attention-Based Semi-Supervised Learning for Medical Image Segmentation" implementation. It contains some modifications that were made to fit our own task.
 ________________________________________________________________________________________________________________________________________________________________________________________________
 # MASSL-segmentation-framework
 
