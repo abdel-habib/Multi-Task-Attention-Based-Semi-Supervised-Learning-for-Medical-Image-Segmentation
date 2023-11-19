@@ -1,0 +1,46 @@
+job: MASSL_alter
+
+data random seed: 2
+
+data_split: 10L110U
+
+dataset sizes: {'trainLabeled': 10, 'trainUnlabeled': 110, 'val_labeled': 40, 'val_unlabeled': 40, 'test': 50}
+
+model: <class 'network.ssl_3d_attention.MASSL_norm'>
+
+base features: 16
+
+network_switch: {'trainL_encoder': True, 'trainL_decoder_seg': True, 'trainL_decoder_rec': False, 'trainU_encoder': True, 'trainU_decoder_seg': False, 'trainU_decoder_rec': True}
+
+loss function: (DiceCoefficientLF(), MSELoss())
+
+optimizer: (Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    weight_decay: 0
+), Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+))
+
+lr scheduler: (<torch.optim.lr_scheduler.StepLR object at 0x7f21f7261390>, <torch.optim.lr_scheduler.StepLR object at 0x7f21f7260370>)
+
