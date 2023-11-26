@@ -42,5 +42,5 @@ Parameter Group 0
     weight_decay: 0
 ))
 
-lr scheduler: (<torch.optim.lr_scheduler.StepLR object at 0x7f21f7262bf0>, <torch.optim.lr_scheduler.StepLR object at 0x7f21f7262f20>)
+lr scheduler: (<torch.optim.lr_scheduler.StepLR object at 0x7f41d1c9e8f0>, <torch.optim.lr_scheduler.StepLR object at 0x7f41d1c9e920>)
 

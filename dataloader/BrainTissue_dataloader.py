@@ -59,7 +59,7 @@ def BrainTissuedata(data_seed, data_split):
     # Continue modifications starting from below
     # From below, modified the new name of the dataset to be BrainTissueDataset
     # 
-    # 
+    # From the training code for our task MASSL, the auther used 10L110U
 
     if data_split == '20L0U' or data_split == '20L100U':
         train_labeled_img_list, train_labeled_mask_list = map(list, zip(*(data_list[0:  20])))
